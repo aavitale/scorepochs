@@ -1,5 +1,5 @@
 
-function [ score_table ] = pipeline01_dev2_happe(eeglab_dir, code_dir, data_dir, subj_name_edf)
+function [ score_table ] = pipeline01_dev3_happe_ASR(eeglab_dir, code_dir, data_dir, subj_name_edf)
 %function [ score_table, eeg_ICA ] = pipeline01_dev2_happe(eeglab_dir, code_dir, data_dir, subj_name_edf)
 
 %    This function performs a series of preprocessing steps
@@ -484,7 +484,7 @@ end
   
     
     if do_save_score
-        save_name = [subj_name_edf(1:end-4) '_scorepoch' ];
+        save_name = [subj_name_edf(1:end-4) '_scorepoch_pipeline01' ];
         save(save_name, 'score_struct')
         
 %         % REPORT other METRICS:
